@@ -10,6 +10,7 @@ public class AppSeasonIdentifier {
 
         AppSeasonIdentifier objectName = new AppSeasonIdentifier();
         while (starter) {
+            System.out.println("\n\nThis app helps to identify the season.\n");
             objectName.questionToContinue();
         }
     }
@@ -51,7 +52,7 @@ public class AppSeasonIdentifier {
 
     // question "Do you want to continue"
     public void questionToContinue() {
-        System.out.println("\n\nThis app helps to identify the season.\n\nDo you want to continue? <y/n>");
+        System.out.println("\nDo you want to continue? <y/n>");
         Scanner scanner = new Scanner(System.in);
         String response = scanner.nextLine();
         if (response.equalsIgnoreCase("y") ||
