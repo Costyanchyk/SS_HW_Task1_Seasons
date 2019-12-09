@@ -24,7 +24,7 @@ public class AppSeasonIdentifier {
             case "december":
             case "january":
             case "february":
-                System.out.println("This is " + ListOfSeasons.WINTER + " buddy!!!\n");
+                System.out.println("This is " + ListOfSeasons.WINTER + " buddy ****!!!\n");
                 break;
             case "june":
             case "july":
@@ -42,7 +42,7 @@ public class AppSeasonIdentifier {
                 System.out.println("This is " + ListOfSeasons.SPRING + " buddy!!!\n");
                 break;
             default:
-                System.out.println("Please write correct month buddy!!!\n");
+                System.out.println("Please write correct month buddy!!!\nFor Example: May, April");
                 identifierSeason();
         }
         return currentSeason;
@@ -51,7 +51,7 @@ public class AppSeasonIdentifier {
 
     // question "Do you want to continue"
     public void questionToContinue() {
-        System.out.println("This app helps to identify the season.\nDo you want to continue? <y/n>");
+        System.out.println("\n\nThis app helps to identify the season.\n\nDo you want to continue? <y/n>");
         Scanner scanner = new Scanner(System.in);
         String response = scanner.nextLine();
         if (response.equalsIgnoreCase("y") ||
